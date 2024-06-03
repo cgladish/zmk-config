@@ -34,10 +34,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp TAB       &kp N7        &kp NUMBER_8  &kp N9        &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL        &kp BACKSLASH  &none
-&none  &kp CAPSLOCK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UP_ARROW    &kp ENTER        &kp SEMICOLON  &none
-&none  &kp ESCAPE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0    &none                 &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &trans
-                                   &trans        &trans        &kp DELETE      &trans                &trans                 &trans
+&none  &kp TAB       &kp N7        &kp NUMBER_8      &kp N9        &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL        &kp BACKSLASH  &none
+&none  &kp CAPSLOCK  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6  &none           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UP_ARROW    &kp ENTER        &kp SEMICOLON  &none
+&none  &kp ESCAPE    &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_0    &none                 &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &trans
+                                   &kp LEFT_CONTROL  &trans        &kp DELETE      &trans                &trans                 &trans
             >;
         };
     };
