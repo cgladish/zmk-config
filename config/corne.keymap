@@ -8,14 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        control_layer_combo {
-            bindings = <&mo 1>;
-            key-positions = <40 36>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -31,16 +24,7 @@
 &none  &kp Q  &kp W  &kp E     &kp R           &kp T       &kp Y      &kp U  &kp I      &kp O    &kp P             &none
 &none  &kp A  &kp S  &kp D     &kp F           &kp G       &kp H      &kp J  &kp K      &kp L    &kp SINGLE_QUOTE  &none
 &none  &kp Z  &kp X  &kp C     &kp V           &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH         &none
-                     &kp LGUI  &kp LEFT_SHIFT  &kp BSPC    &kp SPACE  &mo 2  &kp RALT
-            >;
-        };
-
-        control_layer {
-            bindings = <
-&trans  &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &kp LEFT_CONTROL  &trans  &trans    &trans  &trans  &trans
+                     &kp LGUI  &kp LEFT_SHIFT  &kp BSPC    &kp SPACE  &mo 1  &kp RALT
             >;
         };
 
@@ -54,7 +38,7 @@
             bindings = <
 &none  &kp TAB       &kp N7        &kp NUMBER_8  &kp N9        &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL        &kp BACKSLASH  &none
 &none  &kp CAPSLOCK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UP_ARROW    &kp ENTER        &kp SEMICOLON  &none
-&none  &kp ESCAPE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0    &none                 &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &trans
+&none  &kp ESCAPE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0    &kp RIGHT_CONTROL     &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &trans
                                    &trans        &trans        &kp DELETE      &trans                &trans                 &trans
             >;
         };
